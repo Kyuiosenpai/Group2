@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Sequence</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('black.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .formula {
+            font-weight: bold;
+            color: black;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a {
+            color: black;
+        }
+        /* Heading Box Styles */
+        .heading-box {
+            background: white;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        /* Semi-transparent box for non-heading texts */
+        .content-box {
+            background: rgba(255, 255, 255, 0.7); /* Semi-transparent white */
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading-box">Arithmetic Sequence</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="About.html">Home</a></li>
+            <li><a href="Arithmetic.html">Arithmetic Sequence</a></li>
+            <li><a href="Geometric.html">Geometric Sequence</a></li>
+            <li><a href="Harmonic.html">Harmonic Sequence</a></li>
+            <li><a href="Fibonacci.html">Fibonacci Sequence</a></li>
+            <li><a href="Polynomial.html">Polynomial Expression</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 1: Arithmetic Sequence</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong> Sebastian was assigned to examine how many seats were in each row of an auditorium. The first row had 40 seats, the second row had 42, and the third row had 44. How many seats would be in the 20th row?</p>
+                <h3 class="heading-box">Solution:</h3>
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a₁ = 40 (First row seats)</li>
+                    <li>d = 2 (Increase per row)</li>
+                    <li>n = 20 (20th row)</li>
+                </ul>
+                <p>Formula: <span class="formula">aₙ = a₁ + (n - 1) × d</span></p>
+                <p>Calculation: <span class="formula">a₂₀ = 40 + (20 - 1) × 2 = 78</span></p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 2: Arithmetic Mean</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong> Insert 2 arithmetic means between 9 and 36.</p>
+                <h3 class="heading-box">Solution:</h3>
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a₁ = 9</li>
+                    <li>a₄ = 36</li>
+                    <li>n = 4</li>
+                </ul>
+                <p>Formula: <span class="formula">d = (aₙ - a₁) ÷ (n - 1)</span></p>
+                <p>Calculation: <span class="formula">d = (36 - 9) ÷ (4 - 1) = 9</span></p>
+                <p>Final sequence: <strong>9, 18, 27, 36</strong></p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 3: Arithmetic Series</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong> Find the sum of the first 60 terms of the arithmetic sequence 6, 16, 26, 36, 46,…</p>
+                <h3 class="heading-box">Solution:</h3>
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a₁ = 6</li>
+                    <li>d = 10</li>
+                    <li>n = 60</li>
+                </ul>
+                <p>Step 1: Find the last term <span class="formula">a₆₀ = a₁ + (n - 1) × d</span></p>
+                <p>Calculation: <span class="formula">a₆₀ = 6 + (59 × 10) = 596</span></p>
+                <p>Step 2: Use sum formula <span class="formula">Sₙ = (n / 2) × (a₁ + aₙ)</span></p>
+                <p>Calculation: <span class="formula">S₆₀ = (60 / 2) × (6 + 596) = 18,060</span></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

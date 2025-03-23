@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometric Sequence</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('ein.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .formula {
+            font-weight: bold;
+            color: black;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a {
+            color: black;
+        }
+        /* Heading Box Styles */
+        .heading-box {
+            background: white;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        /* Semi-transparent box for non-heading texts */
+        .content-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading-box">GEOMETRIC SEQUENCE</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="About.html">Home</a></li>
+            <li><a href="Arithmetic.html">Arithmetic Sequence</a></li>
+            <li><a href="Geometric.html">Geometric Sequence</a></li>
+            <li><a href="Harmonic.html">Harmonic Sequence</a></li>
+            <li><a href="Fibonacci.html">Fibonacci Sequence</a></li>
+            <li><a href="Polynomial.html">Polynomial Expression</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 1:</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>Maria decided to save money for the concert by doubling the amount she saves every day. For her first day, she saved Php 50. How much money will she have saved on the 5th day?</p>
+
+                <p><strong>Show your solution here:</strong></p>
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a₁ = 50 (amount saved on first day)</li>
+                    <li>r = 2 (doubled amount)</li>
+                    <li>n = 5 (5th day)</li>
+                </ul>
+                <p>Formula: <span class="formula">aₙ = a₁ (r)^(n - 1)</span></p>
+                <p>Calculation: <span class="formula">a₅ = 50 (2)⁵⁻¹ = 50 × 16 = 800</span></p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 2:</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>In a temple, a treasure chest contains a magical chest of gold coins. Each day, the number of coins inside follows a geometric sequence, as they mysteriously disappear overnight. On the first day, the chest holds 2,430 coins. The next day, only 810 coins remain, and on the third day, there are 720 coins left. If this pattern continues, how many coins will be left on the 7th day?</p>
+
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a₁ = 2430 (first term)</li>
+                    <li>a₂ = 810</li>
+                    <li>a₃ = 270</li>
+                </ul>
+                <p>Common Ratio:</p>
+                <p><span class="formula">r = 810 / 2430 = 1/3</span></p>
+                <p>Formula: <span class="formula">aₙ = a₁ ⋅ r^(n−1)</span></p>
+                <p>Calculation:</p>
+                <p><span class="formula">a₇ = 2430 (1/3)⁶</span></p>
+                <p><span class="formula">a₇ = 2430 × 1/729</span></p>
+                <p><span class="formula">a₇ = 2430 / 729 ≈ 3</span></p>
+                <p>Since the number of coins must be a whole number, we conclude that the chest will contain approximately **3 coins** by the 7th day.</p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 3 (Geometric Mean):</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>Lily wants to plant a flower between two trees in her garden. The first tree is 4 feet tall, the second tree is 16 feet tall. To make her garden look balanced, Lily decides to plant a flower whose height is the geometric mean of the two trees’ heights. How tall should the flower be?</p>
+
+                <p><strong>Show your solution here:</strong></p>
+                <p><strong>Given:</strong></p>
+                <ul>
+                    <li>a = 4</li>
+                    <li>b = 16</li>
+                </ul>
+                <p>Formula: <span class="formula">x = √(a × b)</span></p>
+                <p>Calculation:</p>
+                <p><span class="formula">x = √(4 × 16)</span></p>
+                <p><span class="formula">x = √64</span></p>
+                <p><span class="formula">x = 8</span></p>
+                <p>Thus, the flower should be **8 feet tall**.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

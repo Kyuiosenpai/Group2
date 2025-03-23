@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmonic Sequence</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('board.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        .formula {
+            font-weight: bold;
+            color: black;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        a {
+            color: black;
+        }
+        /* Heading Box Styles */
+        .heading-box {
+            background: white;
+            padding: 15px;
+            border: 2px solid black;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px auto;
+            width: fit-content;
+        }
+        /* Semi-transparent box for non-heading texts */
+        .content-box {
+            background: rgba(255, 255, 255, 0.7);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading-box">HARMONIC SEQUENCE</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="About.html">Home</a></li>
+            <li><a href="Arithmetic.html">Arithmetic Sequence</a></li>
+            <li><a href="Geometric.html">Geometric Sequence</a></li>
+            <li><a href="Harmonic.html">Harmonic Sequence</a></li>
+            <li><a href="Fibonacci.html">Fibonacci Sequence</a></li>
+            <li><a href="Polynomial.html">Polynomial Expression</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 1:</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>Emma, Jake, and Liam are sharing a bag of candies. The number of candies each of them receives follows a harmonic sequence. Emma gets 6 candies, while Jake gets 9 candies. If this pattern continues, how many candies does Liam get?</p>
+
+                <p><strong>Show your solution here:</strong></p>
+                <p>Find the common difference in the reciprocals:</p>
+                <p><span class="formula">1/9 - 1/6</span></p>
+                <p>Converting to a common denominator:</p>
+                <p><span class="formula">1/6 = 3/18, 1/9 = 2/18</span></p>
+                <p><span class="formula">d = 2/18 - 3/18 = -1/18</span></p>
+                <p>The pattern follows a common difference of <span class="formula">-1/18</span>.</p>
+
+                <p>Finding Liam’s candies:</p>
+                <p><span class="formula">1/a₃ = 1/9 + d</span></p>
+                <p><span class="formula">1/a₃ = 2/18 + (-1/18) = 1/18</span></p>
+                <p>Taking the reciprocal:</p>
+                <p><strong>Final answer:</strong> <span class="formula">Liam gets 18 candies.</span></p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 2:</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>The time it takes for a race car to complete each lap of a race track follows a harmonic sequence. The first lap takes 60 seconds, and each consecutive lap takes 5 seconds less than the previous one. How long will it take to complete the 10th lap?</p>
+
+                <p><strong>Show your solution here:</strong></p>
+                <p>Formula: <span class="formula">aₙ = a₁ + (n - 1) d</span></p>
+                <p><span class="formula">a₁₀ = 60 + (10 - 1) (-5)</span></p>
+                <p><span class="formula">= 60 + 9 (-5)</span></p>
+                <p><span class="formula">= 60 - 45</span></p>
+                <p><span class="formula">a₁₀ = 15</span></p>
+                <p><strong>Final answer:</strong> <span class="formula">It takes the car 15 seconds to complete the 10th lap.</span></p>
+            </div>
+        </section>
+
+        <section class="problem">
+            <h2 class="heading-box">Mathematical Problem 3:</h2>
+            <div class="content-box">
+                <p><strong>Problem:</strong></p>
+                <p>Find the 12th term in the sequence ⅙, 1/12, 1/18…</p>
+
+                <p><strong>Show your solution here:</strong></p>
+                <p>Formula: <span class="formula">aₙ = 1 / (a₁ + (n - 1) d)</span></p>
+                <p><span class="formula">a₁₂ = 1 / (6 + (12 - 1) 6)</span></p>
+                <p><span class="formula">= 1 / (6 + (11) 6)</span></p>
+                <p><span class="formula">= 1 / (6 + 66)</span></p>
+                <p><span class="formula">= 1/72</span></p>
+                <p><strong>Final answer:</strong> <span class="formula">The 12th term of the sequence is 1/72.</span></p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
