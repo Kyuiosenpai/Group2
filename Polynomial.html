@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polynomial Expressions</title>
+    <title>Polynomial Expressions - Angelica Domingo</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('black.png');
+            background-image: url('yoink.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -25,7 +25,6 @@
         a {
             color: black;
         }
-        /* Heading Box Styles */
         .heading-box {
             background: white;
             padding: 15px;
@@ -35,13 +34,20 @@
             margin: 20px auto;
             width: fit-content;
         }
-        /* Semi-transparent box for non-heading texts */
         .content-box {
             background: rgba(255, 255, 255, 0.7);
             padding: 15px;
             border-radius: 8px;
             margin: 20px auto;
             width: 80%;
+        }
+        .whiteboard {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+            background: white;
+            margin: 20px auto;
+            display: block;
         }
     </style>
 </head>
@@ -55,80 +61,95 @@
             <li><a href="Harmonic.html">Harmonic Sequence</a></li>
             <li><a href="Fibonacci.html">Fibonacci Sequence</a></li>
             <li><a href="Polynomial.html">Polynomial Expression</a></li>
+            <li><a href="Equations.html">Polynomial Equations</a></li>
         </ul>
     </nav>
     <main>
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 1:</h2>
+            <h2 class="heading-box">Mathematical Problem 1: A rectangle has the length of 3x - 2 and the width of x - 4.</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
-                <p>A rectangle has the length of 3x - 2 and the width of x - 4.  
-                Find the expression for the area of the rectangle.</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p>Formula: <span class="formula">Area = Length × Width</span></p>
-                <p>Solution:</p>
-                <p><span class="formula">(3x - 2)(x - 4)</span></p>
-                <p>Expanding:</p>
-                <p><span class="formula">3x × x = 3x²</span></p>
-                <p><span class="formula">3x × (-4) = -12x</span></p>
-                <p><span class="formula">-2 × x = -2x</span></p>
-                <p><span class="formula">-2 × (-4) = 8</span></p>
-                <p>Combining like terms:</p>
-                <p><span class="formula">3x² - 12x - 2x + 8</span></p>
-                <p><span class="formula">3x² - 14x + 8</span></p>
-                <p><strong>Final answer:</strong> <span class="formula">3x² - 14x + 8</span></p>
+                <p>Find the expression for the area of the rectangle.</p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <p><strong>Formula: Area = Length x Width</strong></p>
+                <canvas class="whiteboard" id="whiteboard1"></canvas>
+                <p><strong>Solution:</strong></p>
+                <p>(3x - 2)(x-4)</p>
+                <p>3x • x = 3x^2</p>
+                <p>3x • (-4) = -12x</p>
+                <p>-2 • x = -2x</p>
+                <p>-2 • (-4) = 8</p>
+                <p>3x^2 - 12x - 2x + 8</p>
+                <p>3x^2 - 14x + 8</p>
+                <p><strong>Final Answer:</strong> 3x^2 - 14x + 8</p>
             </div>
         </section>
 
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 2:</h2>
+            <h2 class="heading-box">Mathematical Problem 2: A company sells a product for x^2 + 5x - 6 pesos per item and produces x + 3 items per day.</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
-                <p>A company sells a product for x² + 5x - 6 pesos per item and produces x + 3 items per day.  
-                Find the total daily revenue in terms of x.</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p>Solution: <span class="formula">Revenue = price per item × number of items</span></p>
-                <p>Expanding:</p>
-                <p><span class="formula">(x² + 5x - 6)(x + 3)</span></p>
-                <p><span class="formula">x² × x = x³</span></p>
-                <p><span class="formula">x² × 3 = 3x²</span></p>
-                <p><span class="formula">5x × x = 5x²</span></p>
-                <p><span class="formula">5x × 3 = 15x</span></p>
-                <p><span class="formula">-6 × x = -6x</span></p>
-                <p><span class="formula">-6 × 3 = -18</span></p>
-                <p>Combining like terms:</p>
-                <p><span class="formula">x³ + (3x² + 5x²) + (15x - 6x) - 18</span></p>
-                <p><span class="formula">x³ + 8x² + 9x - 18</span></p>
-                <p><strong>Final answer:</strong> <span class="formula">x³ + 8x² + 9x - 18</span></p>
+                <p>Find the total daily revenue in terms of x.</p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <canvas class="whiteboard" id="whiteboard2"></canvas>
+                <p><strong>Solution: Revenue = price per item x number of items</strong></p>
+                <p>(x^2 + 5x - 6)(x + 3)</p>
+                <p>x^2 • x = x^3</p>
+                <p>x^2  • 3 = 3x^2</p>
+                <p>5x  • x = 5x^2</p>
+                <p>5x • 3 = 15x</p>
+                <p>(-6) • x = -6x</p>
+                <p>(-6) • 3 = -18</p>
+                <p>x^3 + (3x^2 + 5x^2) + (15x - 6x) - 18</p>
+                <p>x^3 + 8x^2 + 9x - 18</p>
+                <p><strong>Final Answer:</strong> x^3 + 8x^2 + 9x - 18</p>
             </div>
         </section>
 
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 3:</h2>
+            <h2 class="heading-box">Mathematical Problem 3: A ball is thrown into the air, its height after t seconds is given by:</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
-                <p>A ball is thrown into the air, its height after t seconds is given by:  
-                h(t) = -5t² + 20t + 15.  
-                Find the maximum height of the ball.</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p>The height function is a quadratic equation in the form:  
-                <span class="formula">ax² + bx + c</span></p>
+                <p>h(t) = -5t^2 + 20t + 15.</p>
+                <p>Find the maximum height of the ball.</p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <canvas class="whiteboard" id="whiteboard3"></canvas>
+                <p>The height function is a quadratic equation in the form: ax^2 + bx +c</p>
                 <p>The maximum height occurs at the vertex, given by:</p>
-                <p><span class="formula">t = -b / 2a</span></p>
-                <p>With a = -5 and b = 20:</p>
-                <p><span class="formula">t = -20 / (2 × -5)</span></p>
-                <p><span class="formula">t = 2</span></p>
-                <p>Substituting t = 2 into the height equation:</p>
-                <p><span class="formula">h(2) = -5(2)² + 20(2) + 15</span></p>
-                <p><span class="formula">= -5(4) + 40 + 15</span></p>
-                <p><span class="formula">= -20 + 40 + 15</span></p>
-                <p><span class="formula">h(2) = 35</span></p>
-                <p><strong>Final answer:</strong> <span class="formula">35</span></p>
+                <p>t = -b/2(-5)</p>
+                <p>with a= -5 and b = 20:</p>
+                <p>t = -20/2(-5) = 2</p>
+                <p>with t solved we can finally do the real equation:</p>
+                <p>h(2) = -5(2)^2 + 20(2) + 15</p>
+                <p>= -5(4) + 40 + 15</p>
+                <p>= -20 + 40 + 15</p>
+                <p>h(2) = 35</p>
+                <p><strong>Final Answer:</strong> 35</p>
             </div>
         </section>
     </main>
+    <script>
+        function setupWhiteboard(canvasId) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext("2d");
+            let drawing = false;
+
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            canvas.addEventListener("mousedown", () => drawing = true);
+            canvas.addEventListener("mouseup", () => drawing = false);
+            canvas.addEventListener("mousemove", (e) => {
+                if (!drawing) return;
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.arc(e.offsetX, e.offsetY, 2, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+
+        setupWhiteboard("whiteboard1");
+        setupWhiteboard("whiteboard2");
+        setupWhiteboard("whiteboard3");
+    </script>
 </body>
 </html>

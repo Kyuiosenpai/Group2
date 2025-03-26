@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            background-image: url('yoink.jpg');
+            background-image: url('white.WEBP');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -25,7 +25,6 @@
         a {
             color: black;
         }
-        /* Heading Box Styles */
         .heading-box {
             background: white;
             padding: 15px;
@@ -35,7 +34,6 @@
             margin: 20px auto;
             width: fit-content;
         }
-        /* Semi-transparent box for non-heading texts */
         .content-box {
             background: rgba(255, 255, 255, 0.7);
             padding: 15px;
@@ -43,10 +41,18 @@
             margin: 20px auto;
             width: 80%;
         }
+        .whiteboard {
+            width: 100%;
+            height: 300px;
+            border: 2px solid black;
+            background: white;
+            margin: 20px auto;
+            display: block;
+        }
     </style>
 </head>
 <body>
-    <h1 class="heading-box">FIBONACCI SEQUENCE</h1>
+    <h1 class="heading-box">Fibonacci Sequence</h1>
     <nav class="navbar">
         <ul>
             <li><a href="About.html">Home</a></li>
@@ -55,103 +61,72 @@
             <li><a href="Harmonic.html">Harmonic Sequence</a></li>
             <li><a href="Fibonacci.html">Fibonacci Sequence</a></li>
             <li><a href="Polynomial.html">Polynomial Expression</a></li>
+            <li><a href="Equations.html">Polynomial Equations</a></li>
         </ul>
     </nav>
     <main>
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 1:</h2>
+            <h2 class="heading-box">Mathematical Problem 1: Gerard's One Piece Marathon</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
                 <p>Gerard starts watching One Piece, and the number of episodes he watches follows a Fibonacci sequence. Gerard watched 3 episodes on Day 1, 2 episodes on Day 2, and each follows the sequence.</p>
-                <p>How many total episodes will he have finished after 7 days?</p>
-                <p>On what day will he reach 29 episodes watched?</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p><strong>Given:</strong></p>
-                <ul>
-                    <li>a₁ = 3</li>
-                    <li>a₂ = 2</li>
-                </ul>
-                <p>Formula: <span class="formula">aₙ = aₙ₋₁ + aₙ₋₂</span></p>
-
-                <p>Solution:</p>
-                <p><span class="formula">a₃ = 2 + 3 = 5</span></p>
-                <p><span class="formula">a₄ = 5 + 2 = 7</span></p>
-                <p><span class="formula">a₅ = 7 + 5 = 12</span></p>
-                <p><span class="formula">a₆ = 12 + 7 = 19</span></p>
-                <p><span class="formula">a₇ = 19 + 12 = 31</span></p>
-
-                <p><strong>Cumulative Total:</strong></p>
-                <p>3 + 2 = 5</p>
-                <p>5 + 5 = 10</p>
-                <p>10 + 7 = 17</p>
-                <p>17 + 12 = 29</p>
-                <p>29 + 19 = 48</p>
-                <p>48 + 31 = 79</p>
-
-                <p>Gerard has watched a total of 79 episodes of One Piece in 7 days. He reached 29 episodes watched in total on Day 5.</p>
+                <p><strong>How many total episodes will he have finished after 7 days?</strong></p>
+                <p><strong>On what day will he reach 29 episodes watched?</strong></p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <canvas class="whiteboard" id="whiteboard1"></canvas>
+                <p><strong>Final Answer:</strong> Gerard has watched a total of 79 episodes of One Piece in 7 days. He reached 29 episodes watched in total on Day 5.</p>
             </div>
         </section>
 
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 2:</h2>
+            <h2 class="heading-box">Mathematical Problem 2: Bash's Warframe Gaming Pattern</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
                 <p>Bash starts playing Warframe with a Fibonacci pattern. On Day 1, Bash plays for 130 minutes, on Day 2, he plays for 40 minutes, and each day follows the sequence.</p>
-                <p>Between Day 1 and Day 5, which day has the highest minutes for gaming?</p>
-                <p>On what day will he first play more than 3 hours in a single day?</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p><strong>Given:</strong></p>
-                <ul>
-                    <li>a₁ = 130</li>
-                    <li>a₂ = 40</li>
-                </ul>
-                <p>Formula: <span class="formula">aₙ = aₙ₋₁ + aₙ₋₂</span></p>
-
-                <p>Solution:</p>
-                <p><span class="formula">a₃ = 40 + 130 = 170</span></p>
-                <p><span class="formula">a₄ = 170 + 40 = 210</span></p>
-                <p><span class="formula">a₅ = 210 + 170 = 380</span></p>
-
-                <p><strong>Calculation to hours:</strong></p>
-                <p>130/60 = 2.16 hours</p>
-                <p>40/60 = 0.66 hours</p>
-                <p>170/60 = 2.83 hours</p>
-                <p>210/60 = 3.5 hours</p>
-                <p>380/60 = 6.33 hours</p>
-
-                <p>Day 5 has the highest amount of minutes for gaming with 380 minutes, almost twice as much from the last. Bash will first play more than 3 hours on Day 4.</p>
+                <p><strong>Between Day 1 and Day 5, which day has the highest minutes for gaming?</strong></p>
+                <p><strong>On what day will he first play more than 3 hours in a single day?</strong></p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <canvas class="whiteboard" id="whiteboard2"></canvas>
+                <p><strong>Final Answer:</strong> Day 5 has the highest amount of minutes for gaming with 380 minutes. Bash will first play more than 3 hours on Day 4.</p>
             </div>
         </section>
 
         <section class="problem">
-            <h2 class="heading-box">Mathematical Problem 3:</h2>
+            <h2 class="heading-box">Mathematical Problem 3: Kuya Fan Club's Ticket Sales</h2>
             <div class="content-box">
-                <p><strong>Problem:</strong></p>
-                <p>Kuya Fan Club, a local band in Paranaque City, is having a week-long tour with one concert each day. They noticed they sell tickets in a Fibonacci pattern. In their first concert, they sell 45 tickets, and the one after they sell 75 tickets. Each concert's ticket sales are the sum of the last two.</p>
-                <p>How many tickets will they have sold on the last concert of the tour?</p>
-                <p>What is the total amount of tickets sold by the end of the tour?</p>
-                <p>When did they first sell more than 500 tickets?</p>
-
-                <p><strong>Show your solution here:</strong></p>
-                <p><strong>Given:</strong></p>
-                <ul>
-                    <li>a₁ = 45</li>
-                    <li>a₂ = 75</li>
-                </ul>
-                <p>Formula: <span class="formula">aₙ = aₙ₋₁ + aₙ₋₂</span></p>
-
-                <p>Solution:</p>
-                <p><span class="formula">a₃ = 75 + 45 = 120</span></p>
-                <p><span class="formula">a₄ = 120 + 75 = 195</span></p>
-                <p><span class="formula">a₅ = 195 + 120 = 315</span></p>
-                <p><span class="formula">a₆ = 315 + 195 = 510</span></p>
-                <p><span class="formula">a₇ = 510 + 315 = 825</span></p>
-
-                <p>Kuya Fan Club sold 825 tickets on Day 7, the last day of their tour. The total number of tickets sold in this tour is 2085 tickets. They first reached the 500 tickets sold mark on their 6th concert where they sold 510 tickets.</p>
+                <p>Kuya Fan Club, a local band in Paranaque City, is having a week-long tour with one concert each day. They noticed they sell tickets in a Fibonacci pattern. In their first concert, they sell 45 tickets, and the one after they sell 75 tickets. Each concert is the sum of the last two.</p>
+                <p><strong>How many tickets will they have sold on the last concert of the tour?</strong></p>
+                <p><strong>What is the total amount of tickets sold by the end of the tour?</strong></p>
+                <p><strong>When did they first sell more than 500 tickets?</strong></p>
+                <h3 class="heading-box">Show your solution here:</h3>
+                <canvas class="whiteboard" id="whiteboard3"></canvas>
+                <p><strong>Final Answer:</strong> Kuya Fan Club sold 825 tickets on Day 7, the last day of their tour. The total number of tickets sold in this tour is 2085. They first reached the 500 tickets sold mark on their 6th concert.</p>
             </div>
         </section>
     </main>
+    <script>
+        function setupWhiteboard(canvasId) {
+            const canvas = document.getElementById(canvasId);
+            const ctx = canvas.getContext("2d");
+            let drawing = false;
+
+            canvas.width = canvas.offsetWidth;
+            canvas.height = canvas.offsetHeight;
+            ctx.fillStyle = "white";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            canvas.addEventListener("mousedown", () => drawing = true);
+            canvas.addEventListener("mouseup", () => drawing = false);
+            canvas.addEventListener("mousemove", (e) => {
+                if (!drawing) return;
+                ctx.fillStyle = "black";
+                ctx.beginPath();
+                ctx.arc(e.offsetX, e.offsetY, 2, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+
+        setupWhiteboard("whiteboard1");
+        setupWhiteboard("whiteboard2");
+        setupWhiteboard("whiteboard3");
+    </script>
 </body>
 </html>
